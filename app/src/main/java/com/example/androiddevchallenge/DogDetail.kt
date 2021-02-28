@@ -45,10 +45,12 @@ fun DogDetail(dog: Dog) {
             contentScale = ContentScale.Crop
         )
         Spacer(Modifier.height(16.dp))
-        Text("Breed: ${dog.breed}", style = MaterialTheme.typography.h6)
-        Spacer(Modifier.height(16.dp))
-        Text("Origin: ${dog.origin}", style = MaterialTheme.typography.h6)
-        Spacer(Modifier.height(16.dp))
+        Text("Breed: ${dog.breed}", style = MaterialTheme.typography.body1)
+        Spacer(Modifier.height(8.dp))
+        Text("Gender: ${dog.gender}", style = MaterialTheme.typography.body1)
+        Spacer(Modifier.height(8.dp))
+        Text("Age: ${dog.age}", style = MaterialTheme.typography.body1)
+        Spacer(Modifier.height(8.dp))
         Text(stringResource(dog.descriptionResId), style = MaterialTheme.typography.body2)
         Spacer(Modifier.height(16.dp))
         Button(

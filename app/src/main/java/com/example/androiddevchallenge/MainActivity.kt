@@ -25,6 +25,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navArgument
 import androidx.navigation.compose.rememberNavController
+import com.example.androiddevchallenge.Gender.Female
+import com.example.androiddevchallenge.Gender.Male
 import com.example.androiddevchallenge.ui.theme.MyTheme
 
 class MainActivity : AppCompatActivity() {
@@ -72,14 +74,14 @@ fun DarkPreview() {
 }
 
 val dogs = listOf(
-    Dog("1", "Shiba", "Japan", R.drawable.shiba),
-    Dog("2", "American Cocker Spaniel", "United States", R.drawable.american_cocker_spaniel),
-    Dog("3", "Pug", "China", R.drawable.pug),
-    Dog("4", "West Highland White Terrier", "Scotland", R.drawable.west_highland_white_terrier),
-    Dog("5", "Chihuahua", "Mexico", R.drawable.chihuahua),
-    Dog("6", "Dalmatian", "Croatia", R.drawable.dalmatian),
-    Dog("7", "Dachshund", "Germany", R.drawable.dachshund),
-    Dog("8", "Dobermann", "Germany", R.drawable.dobermann),
-    Dog("9", "Labrador Retriever", "United Kingdom", R.drawable.labrador_retriever),
-    Dog("10", "Beagle", "England", R.drawable.beagle)
+    Dog("1", "Shiba", Male, 1, R.drawable.shiba),
+    Dog("2", "American Cocker Spaniel", Female, 2, R.drawable.american_cocker_spaniel),
+    Dog("3", "Pug", Male, 3, R.drawable.pug),
+    Dog("4", "West Highland White Terrier", Female, 2, R.drawable.west_highland_white_terrier),
+    Dog("5", "Chihuahua", Male, 1, R.drawable.chihuahua),
+    Dog("6", "Dalmatian", Female, 2, R.drawable.dalmatian),
+    Dog("7", "Dachshund", Male, 3, R.drawable.dachshund),
+    Dog("8", "Dobermann", Female, 2, R.drawable.dobermann),
+    Dog("9", "Labrador Retriever", Male, 1, R.drawable.labrador_retriever),
+    Dog("10", "Beagle", Female, 2, R.drawable.beagle)
 )

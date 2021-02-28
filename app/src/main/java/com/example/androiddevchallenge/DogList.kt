@@ -85,7 +85,11 @@ fun DogListItem(
             modifier = Modifier.padding(8.dp)
         ) {
             Text(dog.breed, style = MaterialTheme.typography.h6)
-            Text(dog.origin, style = MaterialTheme.typography.subtitle1, color = Color.LightGray)
+            Text(
+                dog.gender.toString(),
+                style = MaterialTheme.typography.subtitle1,
+                color = Color.LightGray
+            )
         }
     }
 }

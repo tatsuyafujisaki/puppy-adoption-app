@@ -21,7 +21,8 @@ import androidx.annotation.StringRes
 data class Dog(
     val id: String,
     val breed: String,
-    val origin: String,
+    val gender: Gender,
+    val age: Int,
     @DrawableRes val drawableResId: Int,
     @StringRes val descriptionResId: Int = R.string.lorem_ipsum
 )
