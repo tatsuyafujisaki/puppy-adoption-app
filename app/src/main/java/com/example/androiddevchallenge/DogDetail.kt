@@ -22,10 +22,12 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Button
+import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -34,7 +36,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun DogDetail(dog: Dog) {
     Column(
-        modifier = Modifier.padding(16.dp)
+        modifier = Modifier.padding(16.dp),
     ) {
         Image(
             painter = painterResource(dog.drawableResId),
@@ -48,6 +50,14 @@ fun DogDetail(dog: Dog) {
         Text("Origin: ${dog.origin}", style = MaterialTheme.typography.h6)
         Spacer(Modifier.height(16.dp))
         Text(stringResource(dog.descriptionResId), style = MaterialTheme.typography.body2)
-        Button()
+        Spacer(Modifier.height(16.dp))
+        Button(
+            onClick = {},
+            colors = ButtonDefaults.textButtonColors(
+                backgroundColor = Color.Yellow
+            )
+        ) {
+            Text("Adopt me!")
+        }
     }
 }
