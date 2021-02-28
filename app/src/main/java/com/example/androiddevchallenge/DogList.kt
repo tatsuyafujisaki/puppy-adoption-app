@@ -86,10 +86,14 @@ fun DogListItem(
         ) {
             Text(dog.breed, style = MaterialTheme.typography.h6)
             Text(
-                dog.gender.toString(),
+                "${
+                    dog.gender.toString().toLowerCase()
+                }. age: ${dog.age}",
                 style = MaterialTheme.typography.subtitle1,
-                color = Color.LightGray
+                color = Color.Gray
             )
         }
     }
 }
+
+
