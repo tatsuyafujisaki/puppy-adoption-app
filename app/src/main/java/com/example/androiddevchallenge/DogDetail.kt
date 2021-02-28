@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -30,6 +31,6 @@ fun DogDetail(dog: Dog) {
         Spacer(Modifier.height(16.dp))
         Text("Origin: ${dog.origin}", style = MaterialTheme.typography.h6)
         Spacer(Modifier.height(16.dp))
-        Text(dog.description, style = MaterialTheme.typography.body2)
+        Text(stringResource(dog.descriptionResId), style = MaterialTheme.typography.body2)
     }
 }
