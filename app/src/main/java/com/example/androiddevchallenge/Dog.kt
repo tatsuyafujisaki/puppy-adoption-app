@@ -3,6 +3,7 @@ package com.example.androiddevchallenge
 import androidx.annotation.DrawableRes
 
 data class Dog(
+    val id: String,
     val breed: String,
     val origin: String,
     @DrawableRes val drawableResId: Int,
