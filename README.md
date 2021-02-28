@@ -7,7 +7,7 @@
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
-My practice app using Jetpack Compose for helping people adopt puppies.
+This is my practice app using Jetpack Compose for helping people adopt puppies.
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
